@@ -81,6 +81,7 @@ const setCarrito = objeto => {
 
 const pintarCarrito = () => {
     //console.log(carrito)
+    items.innerHTML = ''
     Object.values(carrito).forEach(producto => {
         items.innerHTML = ''
         templateCarrito.querySelector('th').textContent = producto.id
